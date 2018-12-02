@@ -19,7 +19,7 @@ How do we do it??
 The basic idea is to moving in a direction such that we will cover maximum points and thereby we will achieve variance
 ![maximization](/images/2018/12/x axis.png)
 
-Consider we somehow know the x dash axis and if we move in that direction we can cover the maximum variance. So we start by considering a unit vector in the direction of x dash axis(length of unit vector is one)
+Assume if we rotate our x axis we will reach xdash and if we move in xdash direction we can cover the maximum variance. So we start by considering a unit vector in the direction of x dash axis(length of unit vector is one)
 
 We will project every point on unit vector on the x dash axis so as the maximize variance
 So the porjection of anypoint xi on the xdash is equal to
@@ -29,4 +29,4 @@ projection of anypoint on unit vector is xi.transporse X x as the in dot product
 So variance is basically square(current- mean)
 
 We will take the mean values of xi in here and calculate variance for all xi's in the plot and since we have already column standardised this data which is also called mean centering for managing the data in a better way
-Our mean will be 0 and stddev will be 1, In all our variance calculations our second term will be zero and will be left with square(xi)
+Our mean will be 0 and stddev will be 1, In all our variance calculations our second term will be zero and will be left with square(xi). Our task is the find the unit vector such that we cover the maximum variance
